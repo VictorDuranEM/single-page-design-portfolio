@@ -8,10 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#030303",
-        purple: "#755CDE",
-        red: "#EB7565",
-        orange: "#F6A560",
+        black: "#030303",
+        mediumBrown: "#7A746E",
+        lightCream: "#FFF7F0",
+        galacticBlue: "#755CDE",
+        summerYellow: "#F6A560",
+        pink: "#F39E9E",
+        lightRed: "#EB7565",
+        cyan: "#61C4B7",
+        darkPurple: "#552049",
       },
     },
   },

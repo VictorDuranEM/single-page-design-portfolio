@@ -1,14 +1,15 @@
 type ArrowProps = {
   className?: string;
   direction: "left" | "right";
+  onClick?: () => void;
 };
 
-function Arrow({ className, direction }: ArrowProps) {
+function Arrow({ className, direction, onClick }: ArrowProps) {
   const arrowSvg = direction === "left" ? "/icon-arrow-left.svg" : "/icon-arrow-right.svg";
   return (
-    <a href="#" className={`bg-dark inline-block p-6 rounded-full hover:bg-purple ${className}`}>
+    <button onClick={onClick} className={`bg-black inline-block p-6 rounded-full hover:bg-galacticBlue ${className}`}>
       <img src={arrowSvg} alt="Arrow" />
-    </a>
+    </button>
   );
 }
 

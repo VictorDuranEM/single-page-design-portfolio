@@ -4,8 +4,8 @@ import { cva, VariantProps } from "class-variance-authority";
 const link = cva("font-bold leading-7 text-white inline-block py-3.5 px-11 rounded-full", {
   variants: {
     intent: {
-      primary: "bg-dark hover:bg-purple",
-      secondary: "bg-red hover:bg-orange",
+      primary: "bg-black hover:bg-galacticBlue",
+      secondary: "bg-lightRed hover:bg-summerYellow",
     },
   },
     defaultVariants: {
