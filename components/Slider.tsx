@@ -28,7 +28,7 @@ export const Slider: React.FC<SliderProps> = ({ className, images }) => {
     <div className={className}>
       <div className="flex gap-4 overflow-hidden">
         <div className="z-10 w-[10%] flex-shrink-0"></div>
-        <div className="flex gap-[5%]" style={transformStyle}>
+        <div className="flex gap-[5%] transition-all" style={transformStyle}>
           {images.map((image, index) => (
             <img key={index} src={image} alt="" className="rounded-xl" />
           ))}
