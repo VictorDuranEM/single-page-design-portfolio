@@ -10,8 +10,8 @@ type CarouselProps = {
 export const Carousel: React.FC<CarouselProps> = ({ className, images }) => {
   return (
     <div className={className}>
-      <Title2>My Work</Title2>
-      <Slider images={images} className='mt-8' />
+      <Title2 className="text-center">My Work</Title2>
+      <Slider images={images} className='mt-8 md:mt-14' />
     </div>
   );
 };

@@ -11,7 +11,7 @@ type ItemsGridProps = {
 export const ItemsGrid: React.FC<ItemsGridProps> = ({ className, items }) => {
   return (
     <div className={className}>
-      <div className="grid gap-6">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 ">
         <div className="p-6 flex flex-col justify-between bg-galacticBlue rounded-lg h-[364px]">
           <img src={items[0].image} alt="" className="w-[128px] self-end" />
           <p className="text-white font-bold text-2xl">{items[0].title}</p>
@@ -30,12 +30,12 @@ export const ItemsGrid: React.FC<ItemsGridProps> = ({ className, items }) => {
             <p className="text-white font-bold text-2xl">{items[3].title}</p>
           </div>
         </div>
-        <div className="flex flex-col gap-6">
-          <div className="p-6 flex flex-col justify-between bg-cyan rounded-lg h-[182px]">
+        <div className="flex flex-col gap-6 md:col-span-2 md:flex-row xl:flex-col xl:col-span-1">
+          <div className="p-6 flex flex-col justify-between bg-cyan rounded-lg h-[182px] md:w-1/2 xl:w-full">
             <img src={items[4].image} alt="" className="w-[160px] self-end" />
             <p className="text-white font-bold text-2xl">{items[4].title}</p>
           </div>
-          <div className="p-6 flex flex-col justify-between bg-darkPurple rounded-lg h-[182px]">
+          <div className="p-6 flex flex-col justify-between bg-darkPurple rounded-lg h-[182px] md:w-1/2 xl:w-full xl:h-[158px]">
             <img src={items[5].image} alt="" className="w-[128px] self-end" />
             <p className="text-white font-bold text-2xl">{items[5].title}</p>
           </div>

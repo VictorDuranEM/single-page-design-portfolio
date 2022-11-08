@@ -27,15 +27,15 @@ export const Slider: React.FC<SliderProps> = ({ className, images }) => {
   return (
     <div className={className}>
       <div className="flex gap-4 overflow-hidden">
-        <div className="z-10 w-[10%] flex-shrink-0"></div>
-        <div className="flex gap-[5%] transition-all" style={transformStyle}>
+        <div className="z-10 w-[30%] flex-shrink-0"></div>
+        <div className="flex w-[80%] gap-[5%] transition-all xl:w-[40%]" style={transformStyle}>
           {images.map((image, index) => (
-            <img key={index} src={image} alt="" className="rounded-xl" />
+            <img key={index} src={image} alt="" className="rounded-xl w-full flex-shrink-0" />
           ))}
         </div>
-        <div className="z-10 w-[10%] flex-shrink-0"></div>
+        <div className="z-10 w-[30%] flex-shrink-0"></div>
       </div>
-      <div className="flex justify-center gap-4 mt-8">
+      <div className="flex justify-center gap-4 mt-8 md:mt-14">
         <Arrow direction="left" onClick={handleLeftArrowClick} />
         <Arrow direction="right" onClick={handleRightArrowClick} />
       </div>
